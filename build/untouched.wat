@@ -1,13 +1,13 @@
 (module
  (type $i32_i32_=>_i32 (func (param i32 i32) (result i32)))
  (type $i32_i32_=>_none (func (param i32 i32)))
- (type $i32_=>_i32 (func (param i32) (result i32)))
  (type $i32_=>_none (func (param i32)))
+ (type $i32_=>_i32 (func (param i32) (result i32)))
  (type $i32_i32_i32_=>_none (func (param i32 i32 i32)))
  (type $i32_i32_i32_=>_i32 (func (param i32 i32 i32) (result i32)))
+ (type $none_=>_i32 (func (result i32)))
  (type $none_=>_none (func))
  (type $i32_i32_i32_i32_=>_none (func (param i32 i32 i32 i32)))
- (type $none_=>_i32 (func (result i32)))
  (import "env" "abort" (func $~lib/builtins/abort (param i32 i32 i32 i32)))
  (memory $0 1)
  (data (i32.const 12) "(\00\00\00\01\00\00\00\00\00\00\00\01\00\00\00(\00\00\00a\00l\00l\00o\00c\00a\00t\00i\00o\00n\00 \00t\00o\00o\00 \00l\00a\00r\00g\00e\00")
@@ -15,17 +15,20 @@
  (data (i32.const 140) "\1e\00\00\00\01\00\00\00\00\00\00\00\01\00\00\00\1e\00\00\00~\00l\00i\00b\00/\00r\00t\00/\00t\00l\00s\00f\00.\00t\00s\00")
  (data (i32.const 204) "\00\00\00\00\01\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
  (data (i32.const 236) "\10\00\00\00\01\00\00\00\00\00\00\00\03\00\00\00\10\00\00\00\e0\00\00\00\e0\00\00\00\00\00\00\00\00\00\00\00")
- (data (i32.const 284) "$\00\00\00\01\00\00\00\00\00\00\00\01\00\00\00$\00\00\00I\00n\00d\00e\00x\00 \00o\00u\00t\00 \00o\00f\00 \00r\00a\00n\00g\00e\00")
- (data (i32.const 348) "\1a\00\00\00\01\00\00\00\00\00\00\00\01\00\00\00\1a\00\00\00~\00l\00i\00b\00/\00a\00r\00r\00a\00y\00.\00t\00s\00")
- (data (i32.const 396) "\1c\00\00\00\01\00\00\00\00\00\00\00\01\00\00\00\1c\00\00\00I\00n\00v\00a\00l\00i\00d\00 \00l\00e\00n\00g\00t\00h\00")
- (data (i32.const 448) "\04\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\00\"\t\00\00\00\00\00\00")
+ (data (i32.const 284) "\00\00\00\00\01\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
+ (data (i32.const 316) "\10\00\00\00\01\00\00\00\00\00\00\00\03\00\00\00\10\00\00\000\01\00\000\01\00\00\00\00\00\00\00\00\00\00")
+ (data (i32.const 364) "$\00\00\00\01\00\00\00\00\00\00\00\01\00\00\00$\00\00\00I\00n\00d\00e\00x\00 \00o\00u\00t\00 \00o\00f\00 \00r\00a\00n\00g\00e\00")
+ (data (i32.const 428) "\1a\00\00\00\01\00\00\00\00\00\00\00\01\00\00\00\1a\00\00\00~\00l\00i\00b\00/\00a\00r\00r\00a\00y\00.\00t\00s\00")
+ (data (i32.const 476) "\1c\00\00\00\01\00\00\00\00\00\00\00\01\00\00\00\1c\00\00\00I\00n\00v\00a\00l\00i\00d\00 \00l\00e\00n\00g\00t\00h\00")
+ (data (i32.const 528) "\04\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\00\"\t\00\00\00\00\00\00")
  (table $0 1 funcref)
  (global $~lib/rt/tlsf/ROOT (mut i32) (i32.const 0))
  (global $~lib/ASC_LOW_MEMORY_LIMIT i32 (i32.const 0))
  (global $~lib/ASC_SHRINK_LEVEL i32 (i32.const 0))
  (global $assembly/Day 1/Puzzle 1/solve/numbers (mut i32) (i32.const 256))
- (global $~lib/rt/__rtti_base i32 (i32.const 448))
- (global $~lib/memory/__heap_base i32 (i32.const 484))
+ (global $assembly/Day 1/Puzzle 2/solve/numbers (mut i32) (i32.const 336))
+ (global $~lib/rt/__rtti_base i32 (i32.const 528))
+ (global $~lib/memory/__heap_base i32 (i32.const 564))
  (export "memory" (memory $0))
  (export "__new" (func $~lib/rt/pure/__new))
  (export "__renew" (func $~lib/rt/pure/__renew))
@@ -35,6 +38,8 @@
  (export "add" (func $assembly/index/add))
  (export "solveDay1_1" (func $assembly/Day 1/Puzzle 1/solve/solve))
  (export "a2ADay1_1" (func $assembly/Day 1/Puzzle 1/solve/addToArray))
+ (export "solveDay1_2" (func $assembly/Day 1/Puzzle 2/solve/solve))
+ (export "a2ADay1_2" (func $assembly/Day 1/Puzzle 2/solve/addToArray))
  (func $~lib/rt/tlsf/removeBlock (param $0 i32) (param $1 i32)
   (local $2 i32)
   (local $3 i32)
@@ -3019,8 +3024,8 @@
   i32.load offset=12
   i32.ge_u
   if
-   i32.const 304
-   i32.const 368
+   i32.const 384
+   i32.const 448
    i32.const 104
    i32.const 42
    call $~lib/builtins/abort
@@ -3334,8 +3339,8 @@
    i32.shr_u
    i32.gt_u
    if
-    i32.const 416
-    i32.const 368
+    i32.const 496
+    i32.const 448
     i32.const 14
     i32.const 48
     call $~lib/builtins/abort
@@ -3407,6 +3412,120 @@
  )
  (func $assembly/Day 1/Puzzle 1/solve/addToArray (param $0 i32)
   global.get $assembly/Day 1/Puzzle 1/solve/numbers
+  local.get $0
+  call $~lib/array/Array<i32>#push
+  drop
+ )
+ (func $assembly/Day 1/Puzzle 2/solve/solve (result i32)
+  (local $0 i32)
+  (local $1 i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  i32.const 0
+  local.set $0
+  loop $for-loop|0
+   local.get $0
+   global.get $assembly/Day 1/Puzzle 2/solve/numbers
+   call $~lib/array/Array<i32>#get:length
+   i32.lt_s
+   local.set $1
+   local.get $1
+   if
+    i32.const 0
+    local.set $2
+    loop $for-loop|1
+     local.get $2
+     global.get $assembly/Day 1/Puzzle 2/solve/numbers
+     call $~lib/array/Array<i32>#get:length
+     i32.lt_s
+     local.set $3
+     local.get $3
+     if
+      i32.const 0
+      local.set $4
+      loop $for-loop|2
+       local.get $4
+       global.get $assembly/Day 1/Puzzle 2/solve/numbers
+       call $~lib/array/Array<i32>#get:length
+       i32.lt_s
+       local.set $5
+       local.get $5
+       if
+        local.get $0
+        local.get $2
+        i32.ne
+        if (result i32)
+         local.get $0
+         local.get $4
+         i32.ne
+        else
+         i32.const 0
+        end
+        if (result i32)
+         local.get $2
+         local.get $4
+         i32.ne
+        else
+         i32.const 0
+        end
+        if (result i32)
+         global.get $assembly/Day 1/Puzzle 2/solve/numbers
+         local.get $0
+         call $~lib/array/Array<i32>#__get
+         global.get $assembly/Day 1/Puzzle 2/solve/numbers
+         local.get $2
+         call $~lib/array/Array<i32>#__get
+         i32.add
+         global.get $assembly/Day 1/Puzzle 2/solve/numbers
+         local.get $4
+         call $~lib/array/Array<i32>#__get
+         i32.add
+         i32.const 2020
+         i32.eq
+        else
+         i32.const 0
+        end
+        if
+         global.get $assembly/Day 1/Puzzle 2/solve/numbers
+         local.get $0
+         call $~lib/array/Array<i32>#__get
+         global.get $assembly/Day 1/Puzzle 2/solve/numbers
+         local.get $2
+         call $~lib/array/Array<i32>#__get
+         i32.mul
+         global.get $assembly/Day 1/Puzzle 2/solve/numbers
+         local.get $4
+         call $~lib/array/Array<i32>#__get
+         i32.mul
+         return
+        end
+        local.get $4
+        i32.const 1
+        i32.add
+        local.set $4
+        br $for-loop|2
+       end
+      end
+      local.get $2
+      i32.const 1
+      i32.add
+      local.set $2
+      br $for-loop|1
+     end
+    end
+    local.get $0
+    i32.const 1
+    i32.add
+    local.set $0
+    br $for-loop|0
+   end
+  end
+  i32.const -1
+ )
+ (func $assembly/Day 1/Puzzle 2/solve/addToArray (param $0 i32)
+  global.get $assembly/Day 1/Puzzle 2/solve/numbers
   local.get $0
   call $~lib/array/Array<i32>#push
   drop
