@@ -3,5 +3,5 @@ const wasm = require("..");
 const days = require(`../days`);
 
 // Day 1
-assert.strictEqual(new days.Day1().puzzle1(), 972576); // Puzzle 1
-assert.strictEqual(new days.Day1().puzzle2(), 199300880); // Puzzle 2
+assert.strictEqual(new days.Day1().puzzle1(), Number(process.env.DAY1_1)); // Puzzle 1
+assert.strictEqual(new days.Day1().puzzle2(), Number(process.env.DAY1_2)); // Puzzle 2

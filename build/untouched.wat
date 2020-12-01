@@ -35,7 +35,6 @@
  (export "__retain" (func $~lib/rt/pure/__retain))
  (export "__release" (func $~lib/rt/pure/__release))
  (export "__rtti_base" (global $~lib/rt/__rtti_base))
- (export "add" (func $assembly/index/add))
  (export "solveDay1_1" (func $assembly/Day 1/Puzzle 1/solve/solve))
  (export "a2ADay1_1" (func $assembly/Day 1/Puzzle 1/solve/addToArray))
  (export "solveDay1_2" (func $assembly/Day 1/Puzzle 2/solve/solve))
@@ -2998,11 +2997,6 @@
    i32.sub
    call $~lib/rt/pure/decrement
   end
- )
- (func $assembly/index/add (param $0 i32) (param $1 i32) (result i32)
-  local.get $0
-  local.get $1
-  i32.add
  )
  (func $~lib/array/Array<i32>#get:length (param $0 i32) (result i32)
   local.get $0

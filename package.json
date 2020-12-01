@@ -15,7 +15,8 @@
   "author": "Chaphasilor",
   "license": "GPL-3.0",
   "dependencies": {
-    "@assemblyscript/loader": "^0.17.3"
+    "@assemblyscript/loader": "^0.17.3",
+    "dotenv": "^8.2.0"
   },
   "devDependencies": {
     "assemblyscript": "^0.17.3"
