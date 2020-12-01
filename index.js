@@ -10,4 +10,5 @@ const base = require(`.`);
 const days = require(`./days`);
 
 
-console.log(new days.Day1().puzzle2());
+console.log(new days.Day1(true).puzzle1());
+console.log(new days.Day1(true).puzzle2());

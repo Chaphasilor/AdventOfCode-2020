@@ -1,5 +1,5 @@
 const assert = require("assert");
-const base = require("..");
+const wasm = require("..");
 const days = require(`../days`);
 
 // Day 1
