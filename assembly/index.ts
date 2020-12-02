@@ -19,10 +19,11 @@ export {
 }
 // DAY 2
 import { solve as solveDay2_1} from "./Day 2/Part 1/solve";
-// import { solve as solveDay2_2 } from "./Day 2/Part 2/solve";
+import { solve as solveDay2_2 } from "./Day 2/Part 2/solve";
 
 export {
   solveDay2_1,
 }
 export {
+  solveDay2_2,
 }

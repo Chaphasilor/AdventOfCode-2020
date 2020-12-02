@@ -83,7 +83,19 @@ class Day2 {
   }
 
   part2() {
+    
+    let passwords = this.inputs.part2
+    let wasmPasswords = new WasmStringArray(passwords)
+    let start = performance.now()
 
+    let solution = wasm.solveDay2_2(wasmPasswords.arrayPointer)
+    wasmPasswords.destroy()
+
+    if (this.showStats) {
+      console.log(`Part 1 took ${(performance.now() - start).toFixed(2)} ms`)
+    }
+    return solution
+    
   }
 
 }

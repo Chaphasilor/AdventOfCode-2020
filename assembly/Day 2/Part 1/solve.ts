@@ -1,7 +1,3 @@
-export function sum(): string {
-  return ``;
-}
-
 export function solve(passwords: string[]): i32 {
 
   return checkInvalid(passwords);
