@@ -56,16 +56,6 @@ class Day2 {
 
   }
 
-
-  doSum(values) {
-    addAll(values)
-    let cPtr = sum() // call with pointers
-    let cStr = __getString(cPtr)
-    __release(cPtr) // we are done with cPtr
-    releaseAll()
-    return cStr
-  }
-  
   part1() {
 
     let passwords = this.inputs.part1
@@ -100,7 +90,54 @@ class Day2 {
 
 }
 
+class Day3 {
+
+  constructor(showStats = false) {
+
+    this.inputs = {
+      part1: fs.readFileSync(`${__dirname}/assembly/Day 3/input.txt`, `utf-8`).split(`\n`),
+      part2: fs.readFileSync(`${__dirname}/assembly/Day 3/input.txt`, `utf-8`).split(`\n`),
+    };
+    this.showStats = showStats;
+
+  }
+
+  part1() {
+
+    let treelines = this.inputs.part1
+    let wasmPasswords = new WasmStringArray(treelines)
+    let start = performance.now()
+
+    let solution = wasm.solveDay3_1(wasmPasswords.arrayPointer)
+    wasmPasswords.destroy()
+
+    if (this.showStats) {
+      console.log(`Part 1 took ${(performance.now() - start).toFixed(2)} ms`)
+    }
+    return solution
+
+  }
+
+  part2() {
+    
+    let treelines = this.inputs.part2
+    let wasmPasswords = new WasmStringArray(treelines)
+    let start = performance.now()
+
+    let solution = wasm.solveDay2_2(wasmPasswords.arrayPointer)
+    wasmPasswords.destroy()
+
+    if (this.showStats) {
+      console.log(`Part 1 took ${(performance.now() - start).toFixed(2)} ms`)
+    }
+    return solution
+    
+  }
+
+}
+
 module.exports = {
   Day1,
   Day2,
+  Day3,
 }

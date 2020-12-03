@@ -1,6 +1,6 @@
 const wasm = require(`./index`);
 const { __newString, __getString, __getArray, __retain, __release } = wasm
-const { getStringArray, addStringToArray } = wasm
+const { getStringArray, addStringToArray, popString } = wasm
 
 function allocateString(string) {
   return __retain(__newString(string))
@@ -30,16 +30,18 @@ class WasmStringArray {
   releaseStrings() {
     for (let pointer of this.stringPointers) {
       __release(pointer)
+      popString(this.arrayPointer)
       // arrays don't need to be realeased
     }
   }
 
   get values() {
+    //TODO only returns an array of string pointers, should return an array of strings
     return __getArray(this.arrayPointer);
   }
 
   get pointers() {
-    return this.stringPointers;
+    return __getArray(this.arrayPointer);
   }
 
   push(string) {
