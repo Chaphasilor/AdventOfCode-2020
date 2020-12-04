@@ -31,10 +31,10 @@ export {
 
 // DAY 3
 import { solve as solveDay3_1} from "./Day 3/Part 1/solve";
-// import { solve as solveDay3_2 } from "./Day 3/Part 2/solve";
+import { solve as solveDay3_2 } from "./Day 3/Part 2/solve";
 export {
   solveDay3_1,
 }
 export {
-  // solveDay3_2,
+  solveDay3_2,
 }

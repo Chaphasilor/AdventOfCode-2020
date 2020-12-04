@@ -10,5 +10,5 @@ module.exports = wasmModule.exports;
 const base = require(`.`); // this file (wasmModule.exports)
 const days = require(`./days`);
 
-// console.log(new days.Day2(true).part1());
 // console.log(new days.Day3(true).part1());
+// console.log(new days.Day3(true).part2());

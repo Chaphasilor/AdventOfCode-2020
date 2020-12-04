@@ -12,7 +12,7 @@ assert.strictEqual(new days.Day2().part2(), Number(process.env.DAY2_2)); // Part
 
 // Day 3
 assert.strictEqual(new days.Day3().part1(), Number(process.env.DAY3_1)); // Part 1
-// assert.strictEqual(new days.Day3().part2(), Number(process.env.DAY3_2)); // Part 2
+assert.strictEqual(new days.Day3().part2(), Number(process.env.DAY3_2)); // Part 2
 
 
 

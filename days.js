@@ -124,11 +124,11 @@ class Day3 {
     let wasmPasswords = new WasmStringArray(treelines)
     let start = performance.now()
 
-    let solution = wasm.solveDay2_2(wasmPasswords.arrayPointer)
+    let solution = wasm.solveDay3_2(wasmPasswords.arrayPointer)
     wasmPasswords.destroy()
 
     if (this.showStats) {
-      console.log(`Part 1 took ${(performance.now() - start).toFixed(2)} ms`)
+      console.log(`Part 2 took ${(performance.now() - start).toFixed(2)} ms`)
     }
     return solution
     
