@@ -38,3 +38,13 @@ export {
 export {
   solveDay3_2,
 }
+
+// DAY 4
+import { solve as solveDay4_1} from "./Day 4/Part 1/solve";
+import { solve as solveDay4_2 } from "./Day 4/Part 2/solve";
+export {
+  solveDay4_1,
+}
+export {
+  solveDay4_2,
+}

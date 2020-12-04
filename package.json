@@ -19,6 +19,6 @@
     "dotenv": "^8.2.0"
   },
   "devDependencies": {
-    "assemblyscript": "^0.17.3"
+    "assemblyscript": "^0.17.4"
   }
 }

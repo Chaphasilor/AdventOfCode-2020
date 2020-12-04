@@ -1,6 +1,7 @@
 require(`dotenv`).config();
 const fs = require("fs");
 const loader = require("@assemblyscript/loader");
+// const closures = require(`assemblyscript-closures-beta`);
 const imports = {
 
 };
@@ -10,5 +11,4 @@ module.exports = wasmModule.exports;
 const base = require(`.`); // this file (wasmModule.exports)
 const days = require(`./days`);
 
-// console.log(new days.Day3(true).part1());
-// console.log(new days.Day3(true).part2());
+// console.log(new days.Day4(true).part2());

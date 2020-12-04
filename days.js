@@ -136,8 +136,55 @@ class Day3 {
 
 }
 
+class Day4 {
+
+  constructor(showStats = false) {
+
+    this.inputs = {
+      part1: fs.readFileSync(`${__dirname}/assembly/Day 4/input.txt`, `utf-8`),
+      part2: fs.readFileSync(`${__dirname}/assembly/Day 4/input.txt`, `utf-8`),
+    };
+    this.showStats = showStats;
+
+  }
+
+  part1() {
+
+    let passports = this.inputs.part1
+    let wasmPassports = allocateString(passports)
+    let start = performance.now()
+
+    let solution = wasm.solveDay4_1(wasmPassports)
+    __release(wasmPassports);
+
+    if (this.showStats) {
+      console.log(`Part 1 took ${(performance.now() - start).toFixed(2)} ms`)
+    }
+    return solution
+
+  }
+
+  part2() {
+    
+    let passports = this.inputs.part1
+    let wasmPassports = allocateString(passports)
+    let start = performance.now()
+
+    let solution = wasm.solveDay4_2(wasmPassports)
+    __release(wasmPassports)
+
+    if (this.showStats) {
+      console.log(`Part 2 took ${(performance.now() - start).toFixed(2)} ms`)
+    }
+    return solution
+    
+  }
+
+}
+
 module.exports = {
   Day1,
   Day2,
   Day3,
+  Day4
 }
