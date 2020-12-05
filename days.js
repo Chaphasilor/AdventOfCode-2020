@@ -196,8 +196,8 @@ class Day5 {
 
   part1() {
 
-    let passports = this.inputs.part1
-    let wasmBoardingPasses = allocateString(passports)
+    let boardingPasses = this.inputs.part1
+    let wasmBoardingPasses = allocateString(boardingPasses)
     let start = performance.now()
 
     let solution = wasm.solveDay5_1(wasmBoardingPasses)
@@ -212,8 +212,8 @@ class Day5 {
 
   part2() {
     
-    let passports = this.inputs.part1
-    let wasmBoardingPasses = allocateString(passports)
+    let boardingPasses = this.inputs.part1
+    let wasmBoardingPasses = allocateString(boardingPasses)
     let start = performance.now()
 
     let solution = wasm.solveDay5_2(wasmBoardingPasses)

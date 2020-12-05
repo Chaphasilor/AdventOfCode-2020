@@ -51,10 +51,10 @@ export {
 
 // DAY 5
 import { solve as solveDay5_1} from "./Day 5/Part 1/solve";
-// import { solve as solveDay5_2 } from "./Day 5/Part 2/solve";
+import { solve as solveDay5_2 } from "./Day 5/Part 2/solve";
 export {
   solveDay5_1,
 }
 export {
-  // solveDay4_2,
+  solveDay5_2,
 }

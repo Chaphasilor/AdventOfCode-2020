@@ -1,15 +1,15 @@
 (module
  (type $i32_i32_i32_=>_i32 (func (param i32 i32 i32) (result i32)))
  (type $i32_i32_=>_i32 (func (param i32 i32) (result i32)))
- (type $i32_i32_=>_none (func (param i32 i32)))
  (type $i32_=>_i32 (func (param i32) (result i32)))
+ (type $i32_i32_=>_none (func (param i32 i32)))
  (type $i32_=>_none (func (param i32)))
  (type $i32_i32_i32_=>_none (func (param i32 i32 i32)))
- (type $i32_=>_f64 (func (param i32) (result f64)))
  (type $i32_i32_i32_i32_=>_i32 (func (param i32 i32 i32 i32) (result i32)))
+ (type $i32_=>_f64 (func (param i32) (result f64)))
  (type $i32_i32_=>_f64 (func (param i32 i32) (result f64)))
- (type $none_=>_i32 (func (result i32)))
  (type $i32_i32_i32_=>_f64 (func (param i32 i32 i32) (result f64)))
+ (type $none_=>_i32 (func (result i32)))
  (type $f64_f64_i32_i32_=>_f64 (func (param f64 f64 i32 i32) (result f64)))
  (type $i32_i32_f64_=>_none (func (param i32 i32 f64)))
  (type $none_=>_none (func))
@@ -17,6 +17,8 @@
  (type $i32_i64_i32_=>_none (func (param i32 i64 i32)))
  (type $i32_i64_i32_i32_=>_none (func (param i32 i64 i32 i32)))
  (type $i32_i32_i32_i32_i32_=>_i32 (func (param i32 i32 i32 i32 i32) (result i32)))
+ (type $i32_f64_=>_i32 (func (param i32 f64) (result i32)))
+ (type $i32_f64_i32_=>_i32 (func (param i32 f64 i32) (result i32)))
  (type $i64_i32_=>_i32 (func (param i64 i32) (result i32)))
  (type $i32_i32_f64_=>_f64 (func (param i32 i32 f64) (result f64)))
  (type $f64_i32_=>_f64 (func (param f64 i32) (result f64)))
@@ -120,9 +122,16 @@
  (data (i32.const 5564) "<\00\00\00\01\00\00\00\00\00\00\00\01\00\00\00<\00\00\00a\00s\00s\00e\00m\00b\00l\00y\00/\00D\00a\00y\00 \005\00/\00P\00a\00r\00t\00 \001\00/\00s\00o\00l\00v\00e\00.\00t\00s\00")
  (data (i32.const 5644) "\08\00\00\00\01\00\00\00\00\00\00\00\06\00\00\00\08\00\00\00\10\00\00\00\00\00\00\00")
  (data (i32.const 5676) "\08\00\00\00\01\00\00\00\00\00\00\00\n\00\00\00\08\00\00\00\11\00\00\00\00\00\00\00")
- (data (i32.const 5712) "\14\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\00\"\t\00\00\00\00\00\00\"A\00\00\00\00\00\00\"\1a\00\00\00\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\000\t\82\00\00\00\00\00\"A\00\00\00\00\00\00 \00\00\00\00\00\00\00\"A\00\00\00\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\00\"A\00\00\00\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\00")
- (table $0 18 funcref)
- (elem (i32.const 1) $assembly/Day 2/Part 1/solve/checkInvalid~anonymous|0 $assembly/Day 2/Part 2/solve/checkInvalid~anonymous|0 $assembly/Day 3/Part 2/solve/checkTrees~anonymous|0 $assembly/Day 4/Part 1/solve/solve~anonymous|0~anonymous|0 $assembly/Day 4/Part 1/solve/solve~anonymous|0 $assembly/Day 4/Part 2/solve/solve~anonymous|0~anonymous|0 $assembly/Day 4/Part 2/solve/solve~anonymous|0 $assembly/Day 4/Part 2/solve/solve~anonymous|1~anonymous|0 $assembly/Day 4/Part 2/solve/solve~anonymous|1 $assembly/Day 4/Part 2/solve/solve~anonymous|2~anonymous|0 $assembly/Day 4/Part 2/solve/solve~anonymous|2 $assembly/Day 4/Part 2/solve/solve~anonymous|3 $assembly/Day 4/Part 2/solve/solve~anonymous|4 $assembly/Day 5/Part 1/solve/solve~anonymous|0~anonymous|0 $assembly/Day 5/Part 1/solve/solve~anonymous|0~anonymous|1 $assembly/Day 5/Part 1/solve/solve~anonymous|0 $assembly/Day 5/Part 1/solve/solve~anonymous|1)
+ (data (i32.const 5708) "\08\00\00\00\01\00\00\00\00\00\00\00\13\00\00\00\08\00\00\00\12\00\00\00\00\00\00\00")
+ (data (i32.const 5740) "\10\00\00\00\01\00\00\00\00\00\00\00\00\00\00\00\10\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\c0_@")
+ (data (i32.const 5788) "\08\00\00\00\01\00\00\00\00\00\00\00\13\00\00\00\08\00\00\00\13\00\00\00\00\00\00\00")
+ (data (i32.const 5820) "\10\00\00\00\01\00\00\00\00\00\00\00\00\00\00\00\10\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\1c@")
+ (data (i32.const 5868) "<\00\00\00\01\00\00\00\00\00\00\00\01\00\00\00<\00\00\00a\00s\00s\00e\00m\00b\00l\00y\00/\00D\00a\00y\00 \005\00/\00P\00a\00r\00t\00 \002\00/\00s\00o\00l\00v\00e\00.\00t\00s\00")
+ (data (i32.const 5948) "\08\00\00\00\01\00\00\00\00\00\00\00\06\00\00\00\08\00\00\00\14\00\00\00\00\00\00\00")
+ (data (i32.const 5980) "\00\00\00\00\01\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
+ (data (i32.const 6000) "\14\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\00\"\t\00\00\00\00\00\00\"A\00\00\00\00\00\00\"\1a\00\00\00\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\000\t\82\00\00\00\00\00\"A\00\00\00\00\00\00 \00\00\00\00\00\00\00\"A\00\00\00\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\00\"A\00\00\00\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\00")
+ (table $0 21 funcref)
+ (elem (i32.const 1) $assembly/Day 2/Part 1/solve/checkInvalid~anonymous|0 $assembly/Day 2/Part 2/solve/checkInvalid~anonymous|0 $assembly/Day 3/Part 2/solve/checkTrees~anonymous|0 $assembly/Day 4/Part 1/solve/solve~anonymous|0~anonymous|0 $assembly/Day 4/Part 1/solve/solve~anonymous|0 $assembly/Day 4/Part 2/solve/solve~anonymous|0~anonymous|0 $assembly/Day 4/Part 2/solve/solve~anonymous|0 $assembly/Day 4/Part 2/solve/solve~anonymous|1~anonymous|0 $assembly/Day 4/Part 2/solve/solve~anonymous|1 $assembly/Day 4/Part 2/solve/solve~anonymous|2~anonymous|0 $assembly/Day 4/Part 2/solve/solve~anonymous|2 $assembly/Day 4/Part 2/solve/solve~anonymous|3 $assembly/Day 4/Part 2/solve/solve~anonymous|4 $assembly/Day 5/Part 1/solve/solve~anonymous|0~anonymous|0 $assembly/Day 5/Part 1/solve/solve~anonymous|0~anonymous|1 $assembly/Day 5/Part 1/solve/solve~anonymous|0 $assembly/Day 5/Part 1/solve/solve~anonymous|1 $assembly/Day 5/Part 2/solve/solve~anonymous|0~anonymous|0 $assembly/Day 5/Part 2/solve/solve~anonymous|0~anonymous|1 $assembly/Day 5/Part 2/solve/solve~anonymous|0)
  (global $~lib/rt/tlsf/ROOT (mut i32) (i32.const 0))
  (global $~lib/ASC_LOW_MEMORY_LIMIT i32 (i32.const 0))
  (global $~lib/ASC_SHRINK_LEVEL i32 (i32.const 0))
@@ -132,8 +141,8 @@
  (global $~argumentsLength (mut i32) (i32.const 0))
  (global $~lib/string/String.MAX_LENGTH i32 (i32.const 536870910))
  (global $~lib/util/string/__fixmulShift (mut i64) (i64.const 0))
- (global $~lib/rt/__rtti_base i32 (i32.const 5712))
- (global $~lib/memory/__heap_base i32 (i32.const 5876))
+ (global $~lib/rt/__rtti_base i32 (i32.const 6000))
+ (global $~lib/memory/__heap_base i32 (i32.const 6164))
  (export "memory" (memory $0))
  (export "__new" (func $~lib/rt/pure/__new))
  (export "__renew" (func $~lib/rt/pure/__renew))
@@ -154,6 +163,7 @@
  (export "solveDay4_1" (func $assembly/Day 4/Part 1/solve/solve))
  (export "solveDay4_2" (func $assembly/Day 4/Part 2/solve/solve))
  (export "solveDay5_1" (func $assembly/Day 5/Part 1/solve/solve))
+ (export "solveDay5_2" (func $assembly/Day 5/Part 2/solve/solve))
  (func $~lib/rt/tlsf/removeBlock (param $0 i32) (param $1 i32)
   (local $2 i32)
   (local $3 i32)
@@ -11381,7 +11391,7 @@
   if
    i32.const 0
    i32.const 5584
-   i32.const 20
+   i32.const 17
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -11404,7 +11414,7 @@
   if
    i32.const 0
    i32.const 5584
-   i32.const 21
+   i32.const 18
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -11427,7 +11437,7 @@
   if
    i32.const 0
    i32.const 5584
-   i32.const 22
+   i32.const 19
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -11513,6 +11523,586 @@
   local.get $0
   call $~lib/rt/pure/__release
   local.get $4
+ )
+ (func $assembly/Day 5/Part 2/solve/solve~anonymous|0~anonymous|0 (param $0 i32) (param $1 i32) (param $2 i32) (param $3 i32) (result i32)
+  (local $4 f64)
+  (local $5 i32)
+  (local $6 i32)
+  local.get $0
+  call $~lib/rt/pure/__retain
+  local.set $0
+  local.get $1
+  call $~lib/rt/pure/__retain
+  local.set $1
+  local.get $3
+  call $~lib/rt/pure/__retain
+  local.set $3
+  local.get $0
+  i32.const 1
+  call $~lib/array/Array<f64>#__get
+  local.get $0
+  i32.const 0
+  call $~lib/array/Array<f64>#__get
+  f64.sub
+  f64.const 2
+  f64.div
+  local.set $4
+  local.get $4
+  f64.ceil
+  local.set $4
+  local.get $1
+  i32.const 5360
+  call $~lib/string/String.__eq
+  if (result i32)
+   i32.const 2
+   i32.const 3
+   i32.const 5
+   i32.const 0
+   call $~lib/rt/__newArray
+   call $~lib/rt/pure/__retain
+   local.set $5
+   local.get $5
+   i32.load offset=4
+   local.set $6
+   local.get $6
+   local.get $0
+   i32.const 0
+   call $~lib/array/Array<f64>#__get
+   f64.store
+   local.get $6
+   local.get $0
+   i32.const 1
+   call $~lib/array/Array<f64>#__get
+   local.get $4
+   f64.sub
+   f64.store offset=8
+   local.get $5
+  else
+   i32.const 2
+   i32.const 3
+   i32.const 5
+   i32.const 0
+   call $~lib/rt/__newArray
+   call $~lib/rt/pure/__retain
+   local.set $6
+   local.get $6
+   i32.load offset=4
+   local.set $5
+   local.get $5
+   local.get $0
+   i32.const 0
+   call $~lib/array/Array<f64>#__get
+   local.get $4
+   f64.add
+   f64.store
+   local.get $5
+   local.get $0
+   i32.const 1
+   call $~lib/array/Array<f64>#__get
+   f64.store offset=8
+   local.get $6
+  end
+  local.set $5
+  local.get $0
+  call $~lib/rt/pure/__release
+  local.get $1
+  call $~lib/rt/pure/__release
+  local.get $3
+  call $~lib/rt/pure/__release
+  local.get $5
+ )
+ (func $assembly/Day 5/Part 2/solve/solve~anonymous|0~anonymous|1 (param $0 i32) (param $1 i32) (param $2 i32) (param $3 i32) (result i32)
+  (local $4 f64)
+  (local $5 i32)
+  (local $6 i32)
+  local.get $0
+  call $~lib/rt/pure/__retain
+  local.set $0
+  local.get $1
+  call $~lib/rt/pure/__retain
+  local.set $1
+  local.get $3
+  call $~lib/rt/pure/__retain
+  local.set $3
+  local.get $0
+  i32.const 1
+  call $~lib/array/Array<f64>#__get
+  local.get $0
+  i32.const 0
+  call $~lib/array/Array<f64>#__get
+  f64.sub
+  f64.const 2
+  f64.div
+  local.set $4
+  local.get $4
+  f64.ceil
+  local.set $4
+  local.get $1
+  i32.const 5472
+  call $~lib/string/String.__eq
+  if (result i32)
+   i32.const 2
+   i32.const 3
+   i32.const 5
+   i32.const 0
+   call $~lib/rt/__newArray
+   call $~lib/rt/pure/__retain
+   local.set $5
+   local.get $5
+   i32.load offset=4
+   local.set $6
+   local.get $6
+   local.get $0
+   i32.const 0
+   call $~lib/array/Array<f64>#__get
+   f64.store
+   local.get $6
+   local.get $0
+   i32.const 1
+   call $~lib/array/Array<f64>#__get
+   local.get $4
+   f64.sub
+   f64.store offset=8
+   local.get $5
+  else
+   i32.const 2
+   i32.const 3
+   i32.const 5
+   i32.const 0
+   call $~lib/rt/__newArray
+   call $~lib/rt/pure/__retain
+   local.set $6
+   local.get $6
+   i32.load offset=4
+   local.set $5
+   local.get $5
+   local.get $0
+   i32.const 0
+   call $~lib/array/Array<f64>#__get
+   local.get $4
+   f64.add
+   f64.store
+   local.get $5
+   local.get $0
+   i32.const 1
+   call $~lib/array/Array<f64>#__get
+   f64.store offset=8
+   local.get $6
+  end
+  local.set $5
+  local.get $0
+  call $~lib/rt/pure/__release
+  local.get $1
+  call $~lib/rt/pure/__release
+  local.get $3
+  call $~lib/rt/pure/__release
+  local.get $5
+ )
+ (func $assembly/Day 5/Part 2/solve/solve~anonymous|0 (param $0 i32) (param $1 i32) (param $2 i32) (result f64)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 i32)
+  (local $7 i32)
+  (local $8 i32)
+  (local $9 i32)
+  (local $10 i32)
+  (local $11 f64)
+  local.get $0
+  call $~lib/rt/pure/__retain
+  local.set $0
+  local.get $2
+  call $~lib/rt/pure/__retain
+  local.set $2
+  local.get $0
+  i32.const 0
+  i32.const 7
+  call $~lib/string/String#slice
+  local.tee $3
+  i32.const 784
+  global.get $~lib/builtins/i32.MAX_VALUE
+  call $~lib/string/String#split
+  local.tee $4
+  i32.const 5728
+  i32.const 2
+  i32.const 3
+  i32.const 5
+  i32.const 5760
+  call $~lib/rt/__newArray
+  call $~lib/rt/pure/__retain
+  local.tee $6
+  call $~lib/array/Array<~lib/string/String>#reduce<~lib/array/Array<f64>>
+  local.set $5
+  local.get $0
+  i32.const 7
+  global.get $~lib/builtins/i32.MAX_VALUE
+  call $~lib/string/String#slice
+  local.tee $7
+  i32.const 784
+  global.get $~lib/builtins/i32.MAX_VALUE
+  call $~lib/string/String#split
+  local.tee $8
+  i32.const 5808
+  i32.const 2
+  i32.const 3
+  i32.const 5
+  i32.const 5840
+  call $~lib/rt/__newArray
+  call $~lib/rt/pure/__retain
+  local.tee $10
+  call $~lib/array/Array<~lib/string/String>#reduce<~lib/array/Array<f64>>
+  local.set $9
+  local.get $5
+  i32.const 0
+  call $~lib/array/Array<f64>#__get
+  local.get $5
+  i32.const 1
+  call $~lib/array/Array<f64>#__get
+  f64.eq
+  if (result i32)
+   local.get $9
+   i32.const 0
+   call $~lib/array/Array<f64>#__get
+   local.get $9
+   i32.const 1
+   call $~lib/array/Array<f64>#__get
+   f64.eq
+  else
+   i32.const 0
+  end
+  i32.eqz
+  if
+   i32.const 0
+   i32.const 5888
+   i32.const 17
+   i32.const 5
+   call $~lib/builtins/abort
+   unreachable
+  end
+  local.get $5
+  i32.const 0
+  call $~lib/array/Array<f64>#__get
+  f64.const 0
+  f64.ge
+  if (result i32)
+   local.get $5
+   i32.const 0
+   call $~lib/array/Array<f64>#__get
+   f64.const 127
+   f64.le
+  else
+   i32.const 0
+  end
+  i32.eqz
+  if
+   i32.const 0
+   i32.const 5888
+   i32.const 18
+   i32.const 5
+   call $~lib/builtins/abort
+   unreachable
+  end
+  local.get $9
+  i32.const 0
+  call $~lib/array/Array<f64>#__get
+  f64.const 0
+  f64.ge
+  if (result i32)
+   local.get $9
+   i32.const 0
+   call $~lib/array/Array<f64>#__get
+   f64.const 7
+   f64.le
+  else
+   i32.const 0
+  end
+  i32.eqz
+  if
+   i32.const 0
+   i32.const 5888
+   i32.const 19
+   i32.const 5
+   call $~lib/builtins/abort
+   unreachable
+  end
+  local.get $5
+  i32.const 0
+  call $~lib/array/Array<f64>#__get
+  f64.const 8
+  f64.mul
+  local.get $9
+  i32.const 0
+  call $~lib/array/Array<f64>#__get
+  f64.add
+  local.set $11
+  local.get $3
+  call $~lib/rt/pure/__release
+  local.get $4
+  call $~lib/rt/pure/__release
+  local.get $6
+  call $~lib/rt/pure/__release
+  local.get $5
+  call $~lib/rt/pure/__release
+  local.get $7
+  call $~lib/rt/pure/__release
+  local.get $8
+  call $~lib/rt/pure/__release
+  local.get $10
+  call $~lib/rt/pure/__release
+  local.get $9
+  call $~lib/rt/pure/__release
+  local.get $0
+  call $~lib/rt/pure/__release
+  local.get $2
+  call $~lib/rt/pure/__release
+  local.get $11
+ )
+ (func $~lib/array/Array<f64>#includes (param $0 i32) (param $1 f64) (param $2 i32) (result i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 f64)
+  i32.const 1
+  drop
+  local.get $0
+  i32.load offset=12
+  local.set $3
+  local.get $3
+  i32.const 0
+  i32.eq
+  if (result i32)
+   i32.const 1
+  else
+   local.get $2
+   local.get $3
+   i32.ge_s
+  end
+  if
+   i32.const 0
+   return
+  end
+  local.get $2
+  i32.const 0
+  i32.lt_s
+  if
+   local.get $3
+   local.get $2
+   i32.add
+   local.tee $4
+   i32.const 0
+   local.tee $5
+   local.get $4
+   local.get $5
+   i32.gt_s
+   select
+   local.set $2
+  end
+  local.get $0
+  i32.load offset=4
+  local.set $4
+  loop $while-continue|0
+   local.get $2
+   local.get $3
+   i32.lt_s
+   local.set $5
+   local.get $5
+   if
+    local.get $4
+    local.get $2
+    i32.const 3
+    i32.shl
+    i32.add
+    f64.load
+    local.set $6
+    local.get $6
+    local.get $1
+    f64.eq
+    if (result i32)
+     i32.const 1
+    else
+     local.get $6
+     local.get $6
+     f64.ne
+     local.get $1
+     local.get $1
+     f64.ne
+     i32.and
+    end
+    if
+     i32.const 1
+     return
+    end
+    local.get $2
+    i32.const 1
+    i32.add
+    local.set $2
+    br $while-continue|0
+   end
+  end
+  i32.const 0
+  return
+ )
+ (func $~lib/array/Array<f64>#push (param $0 i32) (param $1 f64) (result i32)
+  (local $2 i32)
+  (local $3 i32)
+  local.get $0
+  i32.load offset=12
+  local.set $2
+  local.get $2
+  i32.const 1
+  i32.add
+  local.set $3
+  local.get $0
+  local.get $3
+  i32.const 3
+  call $~lib/array/ensureSize
+  i32.const 0
+  drop
+  local.get $0
+  i32.load offset=4
+  local.get $2
+  i32.const 3
+  i32.shl
+  i32.add
+  local.get $1
+  f64.store
+  local.get $0
+  local.get $3
+  i32.store offset=12
+  local.get $3
+ )
+ (func $~lib/array/Array<f64>#get:length (param $0 i32) (result i32)
+  local.get $0
+  i32.load offset=12
+ )
+ (func $assembly/Day 5/Part 2/solve/solve (param $0 i32) (result f64)
+  (local $1 i32)
+  (local $2 i32)
+  (local $3 i32)
+  (local $4 i32)
+  (local $5 i32)
+  (local $6 f64)
+  (local $7 f64)
+  local.get $0
+  call $~lib/rt/pure/__retain
+  local.set $0
+  local.get $0
+  i32.const 2032
+  global.get $~lib/builtins/i32.MAX_VALUE
+  call $~lib/string/String#split
+  local.set $1
+  local.get $1
+  i32.const 5968
+  call $~lib/array/Array<~lib/string/String>#map<f64>
+  local.set $2
+  i32.const 0
+  i32.const 3
+  i32.const 5
+  i32.const 6000
+  call $~lib/rt/__newArray
+  call $~lib/rt/pure/__retain
+  local.set $4
+  i32.const 0
+  local.set $3
+  loop $for-loop|0
+   local.get $3
+   i32.const 128
+   i32.const 8
+   i32.mul
+   i32.const 8
+   i32.add
+   i32.lt_s
+   local.set $5
+   local.get $5
+   if
+    local.get $2
+    local.get $3
+    f64.convert_i32_s
+    i32.const 0
+    call $~lib/array/Array<f64>#includes
+    i32.eqz
+    if
+     local.get $4
+     local.get $3
+     f64.convert_i32_s
+     call $~lib/array/Array<f64>#push
+     drop
+    end
+    local.get $3
+    i32.const 1
+    i32.add
+    local.set $3
+    br $for-loop|0
+   end
+  end
+  f64.const -1
+  local.set $6
+  i32.const 0
+  local.set $3
+  loop $for-loop|1
+   local.get $3
+   local.get $4
+   call $~lib/array/Array<f64>#get:length
+   i32.lt_s
+   local.set $5
+   local.get $5
+   if
+    local.get $2
+    local.get $4
+    local.get $3
+    call $~lib/array/Array<f64>#__get
+    f64.const 1
+    f64.sub
+    i32.const 0
+    call $~lib/array/Array<f64>#includes
+    if (result i32)
+     local.get $2
+     local.get $4
+     local.get $3
+     call $~lib/array/Array<f64>#__get
+     f64.const 1
+     f64.add
+     i32.const 0
+     call $~lib/array/Array<f64>#includes
+    else
+     i32.const 0
+    end
+    if
+     local.get $4
+     local.get $3
+     call $~lib/array/Array<f64>#__get
+     local.set $6
+    end
+    local.get $3
+    i32.const 1
+    i32.add
+    local.set $3
+    br $for-loop|1
+   end
+  end
+  local.get $6
+  f64.const -1
+  f64.ne
+  i32.eqz
+  if
+   i32.const 0
+   i32.const 5888
+   i32.const 46
+   i32.const 3
+   call $~lib/builtins/abort
+   unreachable
+  end
+  local.get $6
+  local.set $7
+  local.get $1
+  call $~lib/rt/pure/__release
+  local.get $2
+  call $~lib/rt/pure/__release
+  local.get $4
+  call $~lib/rt/pure/__release
+  local.get $0
+  call $~lib/rt/pure/__release
+  local.get $7
  )
  (func $~lib/rt/pure/finalize (param $0 i32)
   i32.const 0
